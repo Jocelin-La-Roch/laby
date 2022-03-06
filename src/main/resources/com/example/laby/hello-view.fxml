@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<BorderPane fx:id="borderPane" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.laby.HelloController">
+    <left>
+        <Rectangle height="50" width="50" fill="black" BorderPane.alignment="CENTER_LEFT"/>
+    </left>
+    <top>
+        <Rectangle height="50" width="50" fill="black" BorderPane.alignment="TOP_CENTER"/>
+    </top>
+    <right>
+        <Rectangle height="50" width="50" fill="black" BorderPane.alignment="CENTER_RIGHT"/>
+    </right>
+    <bottom>
+        <Rectangle height="50" width="50" fill="black" BorderPane.alignment="BOTTOM_CENTER"/>
+    </bottom>
+    <center>
+        <VBox alignment="CENTER" spacing="20.0" BorderPane.alignment="CENTER">
+            <HBox alignment="CENTER" spacing="20.0">
+                <Button text="Move" onAction="#moveRectangle"/>
+                <Button text="Rote" onAction="#roteTile"/>
+            </HBox>
+            <ImageView fx:id="tileToPlay" layoutX="0" layoutY="0" fitHeight="50" fitWidth="50" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@images/CASE5.GIF"/>
+                </image>
+            </ImageView>
+            <HBox alignment="CENTER">
+                <AnchorPane fx:id="anchorPane">
+
+                    <ImageView fx:id="imageView00" layoutX="0" layoutY="0" fitHeight="50" fitWidth="50" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@images/CASE5.GIF"/>
+                        </image>
+                    </ImageView>
+                    <ImageView layoutX="0" layoutY="50" fitHeight="50" fitWidth="50" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@images/CASE1.GIF"/>
+                        </image>
+                    </ImageView>
+                    <ImageView layoutX="0" layoutY="100" fitHeight="50" fitWidth="50" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@images/CASE2.GIF"/>
+                        </image>
+                    </ImageView>
+                    <ImageView layoutX="0" layoutY="150" fitHeight="50" fitWidth="50" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@images/CASE3.GIF"/>
+                        </image>
+                    </ImageView>
+                    <ImageView layoutX="0" layoutY="200" fitHeight="50" fitWidth="50" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@images/CASE3.GIF"/>
+                        </image>
+                    </ImageView>
+                    <ImageView layoutX="0" layoutY="250" fitHeight="50" fitWidth="50" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@images/CASE3.GIF"/>
+                        </image>
+                    </ImageView>
+                    <ImageView layoutX="0" layoutY="300" fitHeight="50" fitWidth="50" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@images/CASE3.GIF"/>
+                        </image>
+                    </ImageView>
+
+                    <ImageView fx:id="imageView01" layoutX="50" layoutY="0" fitHeight="50" fitWidth="50" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@images/CASE0.GIF"/>
+                        </image>
+                    </ImageView>
+                    <ImageView layoutX="50" layoutY="50" fitHeight="50" fitWidth="50" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@images/CASE1.GIF"/>
+                        </image>
+                    </ImageView>
+                    <ImageView layoutX="50" layoutY="100" fitHeight="50" fitWidth="50" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@images/CASE2.GIF"/>
+                        </image>
+                    </ImageView>
+                    <ImageView layoutX="50" layoutY="150" fitHeight="50" fitWidth="50" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@images/CASE2.GIF"/>
+                        </image>
+                    </ImageView>
+                    <ImageView layoutX="50" layoutY="200" fitHeight="50" fitWidth="50" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@images/CASE3.GIF"/>
+                        </image>
+                    </ImageView>
+                    <ImageView layoutX="50" layoutY="250" fitHeight="50" fitWidth="50" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@images/CASE3.GIF"/>
+                        </image>
+                    </ImageView>
+                    <ImageView layoutX="50" layoutY="300" fitHeight="50" fitWidth="50" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@images/CASE8.GIF"/>
+                        </image>
+                    </ImageView>
+
+                    <ImageView fx:id="imageView02" layoutX="100" layoutY="0" fitHeight="50" fitWidth="50" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@images/CASE4.GIF"/>
+                        </image>
+                    </ImageView>
+                    <ImageView layoutX="100" layoutY="50" fitHeight="50" fitWidth="50" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@images/CASE1.GIF"/>
+                        </image>
+                    </ImageView>
+                    <ImageView layoutX="100" layoutY="100" fitHeight="50" fitWidth="50" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@images/CASE2.GIF"/>
+                        </image>
+                    </ImageView>
+                    <ImageView layoutX="100" layoutY="150" fitHeight="50" fitWidth="50" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@images/CASE3.GIF"/>
+                        </image>
+                    </ImageView>
+                    <ImageView layoutX="100" layoutY="200" fitHeight="50" fitWidth="50" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@images/CASE3.GIF"/>
+                        </image>
+                    </ImageView>
+                    <ImageView layoutX="100" layoutY="250" fitHeight="50" fitWidth="50" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@images/CASE6.GIF"/>
+                        </image>
+                    </ImageView>
+                    <ImageView layoutX="100" layoutY="300" fitHeight="50" fitWidth="50" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@images/CASE3.GIF"/>
+                        </image>
+                    </ImageView>
+
+                    <ImageView fx:id="imageView03" layoutX="150" layoutY="0" fitHeight="50" fitWidth="50" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@images/CASE0.GIF"/>
+                        </image>
+                    </ImageView>
+                    <ImageView layoutX="150" layoutY="50" fitHeight="50" fitWidth="50" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@images/CASE1.GIF"/>
+                        </image>
+                    </ImageView>
+                    <ImageView layoutX="150" layoutY="100" fitHeight="50" fitWidth="50" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@images/CASE2.GIF"/>
+                        </image>
+                    </ImageView>
+                    <ImageView layoutX="150" layoutY="150" fitHeight="50" fitWidth="50" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@images/CASE5.GIF"/>
+                        </image>
+                    </ImageView>
+                    <ImageView layoutX="150" layoutY="200" fitHeight="50" fitWidth="50" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@images/CASE3.GIF"/>
+                        </image>
+                    </ImageView>
+                    <ImageView layoutX="150" layoutY="250" fitHeight="50" fitWidth="50" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@images/CASE5.GIF"/>
+                        </image>
+                    </ImageView>
+                    <ImageView layoutX="150" layoutY="300" fitHeight="50" fitWidth="50" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@images/CASE5.GIF"/>
+                        </image>
+                    </ImageView>
+
+                    <ImageView fx:id="imageView04" layoutX="200" layoutY="0" fitHeight="50" fitWidth="50" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@images/CASE9.GIF"/>
+                        </image>
+                    </ImageView>
+                    <ImageView layoutX="200" layoutY="50" fitHeight="50" fitWidth="50" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@images/CASE1.GIF"/>
+                        </image>
+                    </ImageView>
+                    <ImageView layoutX="200" layoutY="100" fitHeight="50" fitWidth="50" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@images/CASE2.GIF"/>
+                        </image>
+                    </ImageView>
+                    <ImageView layoutX="200" layoutY="150" fitHeight="50" fitWidth="50" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@images/CASE3.GIF"/>
+                        </image>
+                    </ImageView>
+                    <ImageView layoutX="200" layoutY="200" fitHeight="50" fitWidth="50" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@images/CASE5.GIF"/>
+                        </image>
+                    </ImageView>
+                    <ImageView layoutX="200" layoutY="250" fitHeight="50" fitWidth="50" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@images/CASE3.GIF"/>
+                        </image>
+                    </ImageView>
+                    <ImageView layoutX="200" layoutY="300" fitHeight="50" fitWidth="50" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@images/CASE4.GIF"/>
+                        </image>
+                    </ImageView>
+
+                    <ImageView fx:id="imageView05" layoutX="250" layoutY="0" fitHeight="50" fitWidth="50" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@images/CASE5.GIF"/>
+                        </image>
+                    </ImageView>
+                    <ImageView layoutX="250" layoutY="50" fitHeight="50" fitWidth="50" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@images/CASE1.GIF"/>
+                        </image>
+                    </ImageView>
+                    <ImageView layoutX="250" layoutY="100" fitHeight="50" fitWidth="50" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@images/CASE2.GIF"/>
+                        </image>
+                    </ImageView>
+                    <ImageView layoutX="250" layoutY="150" fitHeight="50" fitWidth="50" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@images/CASE3.GIF"/>
+                        </image>
+                    </ImageView>
+                    <ImageView layoutX="250" layoutY="200" fitHeight="50" fitWidth="50" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@images/CASE9.GIF"/>
+                        </image>
+                    </ImageView>
+                    <ImageView layoutX="250" layoutY="250" fitHeight="50" fitWidth="50" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@images/CASE8.GIF"/>
+                        </image>
+                    </ImageView>
+                    <ImageView layoutX="250" layoutY="300" fitHeight="50" fitWidth="50" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@images/CASE3.GIF"/>
+                        </image>
+                    </ImageView>
+
+                    <ImageView fx:id="imageView06" layoutX="300" layoutY="0" fitHeight="50" fitWidth="50" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@images/CASE2.GIF"/>
+                        </image>
+                    </ImageView>
+                    <ImageView layoutX="300" layoutY="50" fitHeight="50" fitWidth="50" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@images/CASE1.GIF"/>
+                        </image>
+                    </ImageView>
+                    <ImageView layoutX="300" layoutY="100" fitHeight="50" fitWidth="50" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@images/CASE2.GIF"/>
+                        </image>
+                    </ImageView>
+                    <ImageView layoutX="300" layoutY="150" fitHeight="50" fitWidth="50" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@images/CASE7.GIF"/>
+                        </image>
+                    </ImageView>
+                    <ImageView layoutX="300" layoutY="200" fitHeight="50" fitWidth="50" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@images/CASE9.GIF"/>
+                        </image>
+                    </ImageView>
+                    <ImageView layoutX="300" layoutY="250" fitHeight="50" fitWidth="50" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@images/CASE3.GIF"/>
+                        </image>
+                    </ImageView>
+                    <ImageView layoutX="300" layoutY="300" fitHeight="50" fitWidth="50" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@images/CASE5.GIF"/>
+                        </image>
+                    </ImageView>
+                </AnchorPane>
+            </HBox>
+        </VBox>
+    </center>
+</BorderPane>
